@@ -26,12 +26,12 @@
               900: '#064e3b',
             },
             board: {
-              bodyHeader: '#2e7d32',   // 身體欄綠色
-              footHeader: '#0288d1',   // 腳底欄藍色
-              fasciaGray: '#9e9e9e',   // 筋膜刀灰底
-              maleBlack: '#1e293b',    // 男師傅黑字
-              femaleRed: '#e11d48',    // 女師傅紅字
-              allBlue: '#0284c7',      // 大全藍字
+              bodyHeader: '#2e7d32',
+              footHeader: '#0288d1',
+              fasciaGray: '#9e9e9e',
+              maleBlack: '#1e293b',
+              femaleRed: '#e11d48',
+              allBlue: '#0284c7',
             }
           }
         }
@@ -54,7 +54,6 @@
       background-color: #cbd5e1;
       border-radius: 9999px;
     }
-    /* 閃爍提醒動畫 */
     @keyframes pulse-subtle {
       0%, 100% { opacity: 1; }
       50% { opacity: 0.6; }
@@ -132,9 +131,9 @@
           拉牌牽動師傅工作權益、現場客人等待體驗與店家營業節奏。面對尖峰塞車、預約改單與突發狀況，保持良好 <strong>EQ</strong>、做好<strong>細心核對</strong>並維護<strong>輪牌公平</strong>，就是櫃台人員展現價值與持續成長的關鍵！
         </p>
         
-        <div class="mt-4 p-3 bg-red-600/20 border-l-4 border-red-500 rounded-r-lg shadow-sm backdrop-blur-sm">
-          <p class="text-red-300 font-bold text-sm sm:text-base tracking-wide flex items-start gap-2">
-            <i class="fa-solid fa-triangle-exclamation mt-1"></i>
+        <div class="mt-4 p-3 bg-red-600 text-white rounded-lg shadow-sm backdrop-blur-sm border-2 border-red-400/50">
+          <p class="font-bold text-sm sm:text-base tracking-wide flex items-start gap-2">
+            <i class="fa-solid fa-triangle-exclamation mt-1 animate-pulse"></i>
             <span>最高指導原則：拉牌必須以「業績與人力安排最大化」為導向，並嚴格遵照標準規則執行！</span>
           </p>
         </div>
@@ -144,7 +143,7 @@
       </div>
     </div>
 
-    <!-- ★ 重點模組：拉牌系統畫面實況解構與標示（依實際螢幕精準還原） -->
+    <!-- ★ 重點模組：拉牌系統畫面實況解構與標示 -->
     <section id="sec-mockup" class="search-item space-y-4">
       <div class="flex items-center justify-between border-b pb-2 border-slate-300">
         <div class="flex items-center space-x-2">
@@ -213,7 +212,7 @@
           <div class="bg-white p-2.5 rounded-lg border border-slate-200 shadow-xs space-y-1">
             <span class="font-black text-slate-800 block">黃/橘底警示狀態：</span>
             <div class="flex items-center gap-2 text-[11px]">
-              <span class="bg-white text-rose-600 border border-slate-200 shadow-sm px-1.5 py-0.5 rounded font-bold">休息</span>
+              <span class="bg-amber-100 text-amber-800 border border-amber-300 shadow-sm px-1.5 py-0.5 rounded font-bold">休息</span>
               <span class="text-slate-600">超過 30 分鐘牌底變黃</span>
             </div>
             <div class="flex items-center gap-2 text-[11px]">
@@ -258,7 +257,7 @@
                   <tr class="hover:bg-slate-50 transition-colors bg-emerald-50/50">
                     <td class="py-1.5 px-1 font-mono font-bold text-slate-700">15</td>
                     <td class="py-1.5 px-1 font-black text-slate-900">10</td>
-                    <td class="py-1.5 px-1"><span class="bg-white text-emerald-600 border border-slate-200 shadow-sm px-1.5 py-0.5 rounded font-bold text-[10px]">排班</span></td>
+                    <td class="py-1.5 px-1"><span class="bg-emerald-600 text-white border border-emerald-700 shadow-sm px-1.5 py-0.5 rounded font-bold text-[10px]">排班</span></td>
                     <td class="py-1.5 px-1 text-slate-400">-</td>
                     <td class="py-1.5 px-1 text-slate-400">-</td>
                     <td class="py-1.5 px-1 text-left text-emerald-800 font-bold">👈 第一支順位 (男師)</td>
@@ -269,7 +268,7 @@
                       <span class="inline-block bg-slate-400 text-white font-mono font-bold px-1.5 py-0.5 rounded shadow-xs">39</span>
                     </td>
                     <td class="py-1.5 px-1 font-black text-sky-600">58</td>
-                    <td class="py-1.5 px-1"><span class="bg-white text-emerald-600 border border-slate-200 shadow-sm px-1.5 py-0.5 rounded font-bold text-[10px]">排班</span></td>
+                    <td class="py-1.5 px-1"><span class="bg-emerald-600 text-white border border-emerald-700 shadow-sm px-1.5 py-0.5 rounded font-bold text-[10px]">排班</span></td>
                     <td class="py-1.5 px-1 text-slate-400">-</td>
                     <td class="py-1.5 px-1 text-slate-400">-</td>
                     <td class="py-1.5 px-1 text-left text-amber-700 font-bold">
@@ -280,30 +279,41 @@
                   <tr class="hover:bg-slate-50 transition-colors">
                     <td class="py-1.5 px-1 font-mono text-slate-600">42</td>
                     <td class="py-1.5 px-1 font-black text-sky-600">05</td>
-                    <td class="py-1.5 px-1"><span class="bg-white text-emerald-600 border border-slate-200 shadow-sm px-1.5 py-0.5 rounded font-bold text-[10px]">排班</span></td>
+                    <td class="py-1.5 px-1"><span class="bg-emerald-600 text-white border border-emerald-700 shadow-sm px-1.5 py-0.5 rounded font-bold text-[10px]">排班</span></td>
                     <td class="py-1.5 px-1 text-slate-400">-</td>
                     <td class="py-1.5 px-1 text-slate-400">-</td>
                     <td class="py-1.5 px-1 text-left text-sky-700">大全師傅（藍字）</td>
                   </tr>
-                  <!-- 女師傅列 -->
+                  <!-- 備牌列 -->
                   <tr class="hover:bg-slate-50 transition-colors">
                     <td class="py-1.5 px-1 font-mono text-slate-600">43</td>
                     <td class="py-1.5 px-1 font-black text-rose-600">33</td>
-                    <td class="py-1.5 px-1"><span class="bg-white text-emerald-600 border border-slate-200 shadow-sm px-1.5 py-0.5 rounded font-bold text-[10px]">排班</span></td>
+                    <td class="py-1.5 px-1"><span class="bg-orange-500 text-white border border-orange-600 shadow-sm px-1.5 py-0.5 rounded font-bold text-[10px]">備牌</span></td>
                     <td class="py-1.5 px-1 text-slate-400">-</td>
                     <td class="py-1.5 px-1 text-slate-400">-</td>
-                    <td class="py-1.5 px-1 text-left text-rose-700">女師傅（紅字）</td>
+                    <td class="py-1.5 px-1 text-left text-orange-700">上班前半小時為備牌</td>
                   </tr>
                   <!-- 休息列 -->
                   <tr class="hover:bg-slate-50 transition-colors bg-amber-50/40">
                     <td class="py-1.5 px-1 font-mono text-slate-600">50</td>
                     <td class="py-1.5 px-1 font-black text-rose-600">68</td>
                     <td class="py-1.5 px-1">
-                      <span class="bg-white text-rose-600 border border-slate-200 shadow-sm px-1.5 py-0.5 rounded text-[10px] font-bold">休息</span>
+                      <span class="bg-red-600 text-white border border-red-700 shadow-sm px-1.5 py-0.5 rounded text-[10px] font-bold">休息</span>
                     </td>
                     <td class="py-1.5 px-1 text-slate-400">-</td>
                     <td class="py-1.5 px-1 text-slate-400">-</td>
                     <td class="py-1.5 px-1 text-left text-amber-800">休息中（超 30 分變黃）</td>
+                  </tr>
+                  <!-- 外出列 -->
+                  <tr class="hover:bg-slate-50 transition-colors">
+                    <td class="py-1.5 px-1 font-mono text-slate-600">22</td>
+                    <td class="py-1.5 px-1 font-black text-slate-900">45</td>
+                    <td class="py-1.5 px-1">
+                      <span class="bg-red-600 text-white border border-red-700 shadow-sm px-1.5 py-0.5 rounded text-[10px] font-bold">外出</span>
+                    </td>
+                    <td class="py-1.5 px-1 text-slate-400">-</td>
+                    <td class="py-1.5 px-1 text-slate-400">-</td>
+                    <td class="py-1.5 px-1 text-left text-red-700">外出中</td>
                   </tr>
                   <!-- 工作與預約列 -->
                   <tr class="hover:bg-slate-50 transition-colors">
@@ -320,7 +330,7 @@
                   <tr class="hover:bg-slate-50 transition-colors bg-rose-50/50">
                     <td class="py-1.5 px-1 font-mono text-slate-600">52</td>
                     <td class="py-1.5 px-1 font-black text-rose-600">18</td>
-                    <td class="py-1.5 px-1 font-bold text-rose-600 bg-amber-100/80 rounded">-7</td>
+                    <td class="py-1.5 px-1 font-bold text-rose-600 bg-amber-100/80 rounded border border-amber-300">-7</td>
                     <td class="py-1.5 px-1 text-slate-400">-</td>
                     <td class="py-1.5 px-1 text-slate-600">3F松濤1</td>
                     <td class="py-1.5 px-1 text-left text-rose-700 font-bold">倒數變負數超時 (轉黃)</td>
@@ -353,7 +363,7 @@
                   <tr class="hover:bg-slate-50 transition-colors bg-sky-50/50">
                     <td class="py-1.5 px-1 font-mono font-bold text-slate-700">20</td>
                     <td class="py-1.5 px-1 font-black text-slate-900">10</td>
-                    <td class="py-1.5 px-1"><span class="bg-white text-emerald-600 border border-slate-200 shadow-sm px-1.5 py-0.5 rounded font-bold text-[10px]">排班</span></td>
+                    <td class="py-1.5 px-1"><span class="bg-emerald-600 text-white border border-emerald-700 shadow-sm px-1.5 py-0.5 rounded font-bold text-[10px]">排班</span></td>
                     <td class="py-1.5 px-1 text-slate-400">-</td>
                     <td class="py-1.5 px-1 text-slate-400">-</td>
                     <td class="py-1.5 px-1 text-left text-sky-800 font-bold">👈 第一支順位 (男師)</td>
@@ -362,7 +372,7 @@
                   <tr class="hover:bg-slate-50 transition-colors">
                     <td class="py-1.5 px-1 font-mono text-slate-600">28</td>
                     <td class="py-1.5 px-1 font-black text-rose-600">33</td>
-                    <td class="py-1.5 px-1"><span class="bg-white text-emerald-600 border border-slate-200 shadow-sm px-1.5 py-0.5 rounded font-bold text-[10px]">排班</span></td>
+                    <td class="py-1.5 px-1"><span class="bg-emerald-600 text-white border border-emerald-700 shadow-sm px-1.5 py-0.5 rounded font-bold text-[10px]">排班</span></td>
                     <td class="py-1.5 px-1 text-slate-400">-</td>
                     <td class="py-1.5 px-1 text-slate-400">-</td>
                     <td class="py-1.5 px-1 text-left text-rose-700">女師傅（紅字）</td>
@@ -371,7 +381,7 @@
                   <tr class="hover:bg-slate-50 transition-colors">
                     <td class="py-1.5 px-1 font-mono text-slate-600">36</td>
                     <td class="py-1.5 px-1 font-black text-slate-900">100</td>
-                    <td class="py-1.5 px-1"><span class="bg-white text-emerald-600 border border-slate-200 shadow-sm px-1.5 py-0.5 rounded font-bold text-[10px]">排班</span></td>
+                    <td class="py-1.5 px-1"><span class="bg-emerald-600 text-white border border-emerald-700 shadow-sm px-1.5 py-0.5 rounded font-bold text-[10px]">排班</span></td>
                     <td class="py-1.5 px-1 text-slate-400">-</td>
                     <td class="py-1.5 px-1 text-slate-400">-</td>
                     <td class="py-1.5 px-1 text-left text-slate-700">男師傅（黑字）</td>
@@ -481,13 +491,13 @@
               <i class="fa-solid fa-shoe-prints mr-1"></i> 右邊：腳底
             </div>
           </div>
-          <div class="text-xs space-y-1.5 pt-1">
+          <div class="text-xs space-y-2 pt-2">
             <p class="font-bold text-slate-700">狀態欄顯示：</p>
-            <div class="grid grid-cols-2 gap-1.5 text-center">
-              <span class="bg-white text-emerald-600 p-1.5 rounded border border-slate-200 shadow-sm"><strong>排班</strong></span>
-              <span class="bg-white text-rose-600 p-1.5 rounded border border-slate-200 shadow-sm"><strong>休息</strong></span>
-              <span class="bg-white text-rose-600 p-1.5 rounded border border-slate-200 shadow-sm"><strong>外出</strong></span>
-              <span class="bg-white text-orange-500 p-1.5 rounded border border-slate-200 shadow-sm"><strong>備牌</strong></span>
+            <div class="grid grid-cols-2 gap-2 text-center">
+              <span class="bg-emerald-600 text-white p-1.5 rounded border border-emerald-700 shadow-sm"><strong>排班</strong></span>
+              <span class="bg-red-600 text-white p-1.5 rounded border border-red-700 shadow-sm"><strong>休息</strong></span>
+              <span class="bg-red-600 text-white p-1.5 rounded border border-red-700 shadow-sm"><strong>外出</strong></span>
+              <span class="bg-orange-500 text-white p-1.5 rounded border border-orange-600 shadow-sm"><strong>備牌</strong></span>
             </div>
           </div>
         </div>
@@ -535,7 +545,6 @@
         </div>
       </div>
 
-      <!-- 改為2x2排版以容納四張卡片 -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         
         <!-- 現場無預約客（順牌拉牌） -->
@@ -602,7 +611,7 @@
           </div>
         </div>
 
-        <!-- 新增：同師傅雙頭牌 -->
+        <!-- 同師傅雙頭牌 -->
         <div class="search-item bg-white p-4 rounded-xl border border-slate-200 shadow-sm space-y-3 card-box">
           <div class="flex items-center justify-between border-b pb-2">
             <span class="font-bold text-slate-800 text-sm">4. 同師傅雙頭牌</span>
@@ -750,12 +759,45 @@
       <div class="flex items-center justify-between border-b pb-2 border-slate-300">
         <div class="flex items-center space-x-2">
           <span class="p-2 bg-amber-100 text-amber-700 rounded-lg"><i class="fa-solid fa-comments"></i></span>
-          <h2 class="text-lg sm:text-xl font-bold text-slate-800">五、 現場接待應對與足湯滿位應變</h2>
+          <h2 class="text-lg sm:text-xl font-bold text-slate-800">五、 現場接待應對與滿位應變</h2>
         </div>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
         
+        <!-- 業績與推銷策略 (新追加) -->
+        <div class="search-item bg-gradient-to-r from-emerald-50 to-teal-50 p-4 sm:p-5 rounded-xl border border-emerald-200 shadow-sm col-span-1 md:col-span-3 card-box relative overflow-hidden">
+          <div class="absolute -right-2 -bottom-4 opacity-10 text-emerald-600 text-7xl pointer-events-none">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <h4 class="font-bold text-emerald-900 text-sm sm:text-base flex items-center gap-2 mb-3 relative z-10">
+            <i class="fa-solid fa-sack-dollar text-amber-500 text-lg"></i> 櫃台銷售與業績提升守則
+          </h4>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 relative z-10">
+            <div class="bg-white p-3 rounded-lg border border-emerald-200 shadow-xs flex items-center justify-center">
+               <span class="text-emerald-800 font-black text-sm sm:text-lg tracking-wider flex items-center gap-1.5">
+                 <i class="fa-solid fa-calculator text-emerald-500/50"></i> 業績 ＝ 來客數 <i class="fa-solid fa-xmark text-xs text-emerald-500 mx-0.5"></i> 客單價
+               </span>
+            </div>
+            <div class="bg-white p-3 rounded-lg border border-emerald-200 shadow-xs">
+              <span class="text-xs font-bold text-slate-600 block mb-1.5 flex items-center gap-1">
+                <i class="fa-solid fa-crown text-amber-500"></i> 現場項目推薦順序：
+              </span>
+              <div class="flex flex-wrap items-center gap-1.5 text-[11px] sm:text-xs font-bold text-slate-700">
+                <span class="bg-amber-100 text-amber-800 px-2 py-1 rounded shadow-sm">1.運動筋膜</span>
+                <i class="fa-solid fa-angle-right text-slate-300"></i>
+                <span class="bg-emerald-100 text-emerald-800 px-2 py-1 rounded shadow-sm">2.套餐系列</span>
+                <i class="fa-solid fa-angle-right text-slate-300"></i>
+                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded shadow-sm">3.單項目</span>
+                <i class="fa-solid fa-angle-right text-slate-300"></i>
+                <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded shadow-sm">4.提高節數</span>
+                <i class="fa-solid fa-angle-right text-slate-300"></i>
+                <span class="bg-rose-100 text-rose-800 px-2 py-1 rounded shadow-sm">5.產品銷售</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- 女性客人推油壓禁忌 -->
         <div class="search-item bg-white p-4 rounded-xl border border-slate-200 shadow-sm space-y-2 card-box">
           <h4 class="font-bold text-slate-900 text-sm flex items-center gap-1.5">
@@ -831,67 +873,67 @@
           <div class="flex items-center justify-between gap-3 min-w-max">
             
             <!-- 卡片 1 -->
-            <div class="border border-gray-700 p-3 rounded-md bg-[#1a1a1a] flex flex-col items-center min-w-[110px] shadow-sm">
+            <div class="border border-gray-700 p-3 rounded-md bg-[#1a1a1a] flex flex-col items-center min-w-[110px] shadow-sm hover:border-gray-500 transition-colors">
               <div id="sim-time-1" class="text-yellow-400 text-3xl font-black mb-1.5 tracking-wider font-sans">--:--</div>
-              <div class="text-gray-400 text-xs mb-3 flex items-center justify-center gap-1 bg-[#222] px-2 py-1 rounded w-full border border-gray-700 hover:border-gray-500 transition-colors">
+              <div class="text-gray-400 text-xs mb-3 flex items-center justify-center gap-1 bg-[#222] px-2 py-1 rounded w-full border border-gray-700 hover:border-gray-400 transition-colors">
                 <input type="number" id="sim-int-1" value="10" class="w-8 bg-transparent text-center text-white focus:outline-none focus:text-yellow-300 font-bold"> <span class="cursor-default">分鐘</span>
               </div>
               <div class="grid grid-cols-3 gap-4 text-center w-full px-1">
                 <div class="flex flex-col items-center"><span class="text-gray-200 font-bold text-lg">2</span><span class="text-gray-500 text-[11px] mt-0.5">男</span></div>
-                <div class="flex flex-col items-center"><span class="text-rose-400 font-bold text-lg">0</span><span class="text-gray-500 text-[11px] mt-0.5">女</span></div>
-                <div class="flex flex-col items-center"><span class="text-sky-400 font-bold text-lg">0</span><span class="text-gray-500 text-[11px] mt-0.5">全</span></div>
+                <div class="flex flex-col items-center"><span class="text-rose-700 font-bold text-lg">0</span><span class="text-gray-500 text-[11px] mt-0.5">女</span></div>
+                <div class="flex flex-col items-center"><span class="text-sky-500 font-bold text-lg">0</span><span class="text-gray-500 text-[11px] mt-0.5">全</span></div>
               </div>
             </div>
 
             <!-- 卡片 2 -->
-            <div class="border border-gray-700 p-3 rounded-md bg-[#1a1a1a] flex flex-col items-center min-w-[110px] shadow-sm">
+            <div class="border border-gray-700 p-3 rounded-md bg-[#1a1a1a] flex flex-col items-center min-w-[110px] shadow-sm hover:border-gray-500 transition-colors">
               <div id="sim-time-2" class="text-yellow-400 text-3xl font-black mb-1.5 tracking-wider font-sans">--:--</div>
-              <div class="text-gray-400 text-xs mb-3 flex items-center justify-center gap-1 bg-[#222] px-2 py-1 rounded w-full border border-gray-700 hover:border-gray-500 transition-colors">
+              <div class="text-gray-400 text-xs mb-3 flex items-center justify-center gap-1 bg-[#222] px-2 py-1 rounded w-full border border-gray-700 hover:border-gray-400 transition-colors">
                 <input type="number" id="sim-int-2" value="30" class="w-8 bg-transparent text-center text-white focus:outline-none focus:text-yellow-300 font-bold"> <span class="cursor-default">分鐘</span>
               </div>
               <div class="grid grid-cols-3 gap-4 text-center w-full px-1">
                 <div class="flex flex-col items-center"><span class="text-gray-200 font-bold text-lg">6</span><span class="text-gray-500 text-[11px] mt-0.5">男</span></div>
                 <div class="flex flex-col items-center"><span class="text-rose-400 font-bold text-lg">2</span><span class="text-gray-500 text-[11px] mt-0.5">女</span></div>
-                <div class="flex flex-col items-center"><span class="text-sky-400 font-bold text-lg">0</span><span class="text-gray-500 text-[11px] mt-0.5">全</span></div>
+                <div class="flex flex-col items-center"><span class="text-sky-500 font-bold text-lg">0</span><span class="text-gray-500 text-[11px] mt-0.5">全</span></div>
               </div>
             </div>
 
             <!-- 卡片 3 -->
-            <div class="border border-gray-700 p-3 rounded-md bg-[#1a1a1a] flex flex-col items-center min-w-[110px] shadow-sm">
+            <div class="border border-gray-700 p-3 rounded-md bg-[#1a1a1a] flex flex-col items-center min-w-[110px] shadow-sm hover:border-gray-500 transition-colors">
               <div id="sim-time-3" class="text-yellow-400 text-3xl font-black mb-1.5 tracking-wider font-sans">--:--</div>
-              <div class="text-gray-400 text-xs mb-3 flex items-center justify-center gap-1 bg-[#222] px-2 py-1 rounded w-full border border-gray-700 hover:border-gray-500 transition-colors">
+              <div class="text-gray-400 text-xs mb-3 flex items-center justify-center gap-1 bg-[#222] px-2 py-1 rounded w-full border border-gray-700 hover:border-gray-400 transition-colors">
                 <input type="number" id="sim-int-3" value="60" class="w-8 bg-transparent text-center text-white focus:outline-none focus:text-yellow-300 font-bold"> <span class="cursor-default">分鐘</span>
               </div>
               <div class="grid grid-cols-3 gap-4 text-center w-full px-1">
                 <div class="flex flex-col items-center"><span class="text-gray-200 font-bold text-lg">7</span><span class="text-gray-500 text-[11px] mt-0.5">男</span></div>
                 <div class="flex flex-col items-center"><span class="text-rose-400 font-bold text-lg">2</span><span class="text-gray-500 text-[11px] mt-0.5">女</span></div>
-                <div class="flex flex-col items-center"><span class="text-sky-400 font-bold text-lg">0</span><span class="text-gray-500 text-[11px] mt-0.5">全</span></div>
+                <div class="flex flex-col items-center"><span class="text-sky-500 font-bold text-lg">0</span><span class="text-gray-500 text-[11px] mt-0.5">全</span></div>
               </div>
             </div>
 
             <!-- 卡片 4 -->
-            <div class="border border-gray-700 p-3 rounded-md bg-[#1a1a1a] flex flex-col items-center min-w-[110px] shadow-sm">
+            <div class="border border-gray-700 p-3 rounded-md bg-[#1a1a1a] flex flex-col items-center min-w-[110px] shadow-sm hover:border-gray-500 transition-colors">
               <div id="sim-time-4" class="text-yellow-400 text-3xl font-black mb-1.5 tracking-wider font-sans">--:--</div>
-              <div class="text-gray-400 text-xs mb-3 flex items-center justify-center gap-1 bg-[#222] px-2 py-1 rounded w-full border border-gray-700 hover:border-gray-500 transition-colors">
+              <div class="text-gray-400 text-xs mb-3 flex items-center justify-center gap-1 bg-[#222] px-2 py-1 rounded w-full border border-gray-700 hover:border-gray-400 transition-colors">
                 <input type="number" id="sim-int-4" value="90" class="w-8 bg-transparent text-center text-white focus:outline-none focus:text-yellow-300 font-bold"> <span class="cursor-default">分鐘</span>
               </div>
               <div class="grid grid-cols-3 gap-4 text-center w-full px-1">
                 <div class="flex flex-col items-center"><span class="text-gray-200 font-bold text-lg">7</span><span class="text-gray-500 text-[11px] mt-0.5">男</span></div>
                 <div class="flex flex-col items-center"><span class="text-rose-400 font-bold text-lg">2</span><span class="text-gray-500 text-[11px] mt-0.5">女</span></div>
-                <div class="flex flex-col items-center"><span class="text-sky-400 font-bold text-lg">0</span><span class="text-gray-500 text-[11px] mt-0.5">全</span></div>
+                <div class="flex flex-col items-center"><span class="text-sky-500 font-bold text-lg">0</span><span class="text-gray-500 text-[11px] mt-0.5">全</span></div>
               </div>
             </div>
 
             <!-- 卡片 5 -->
-            <div class="border border-gray-700 p-3 rounded-md bg-[#1a1a1a] flex flex-col items-center min-w-[110px] shadow-sm">
+            <div class="border border-gray-700 p-3 rounded-md bg-[#1a1a1a] flex flex-col items-center min-w-[110px] shadow-sm hover:border-gray-500 transition-colors">
               <div id="sim-time-5" class="text-yellow-400 text-3xl font-black mb-1.5 tracking-wider font-sans">--:--</div>
-              <div class="text-gray-400 text-xs mb-3 flex items-center justify-center gap-1 bg-[#222] px-2 py-1 rounded w-full border border-gray-700 hover:border-gray-500 transition-colors">
+              <div class="text-gray-400 text-xs mb-3 flex items-center justify-center gap-1 bg-[#222] px-2 py-1 rounded w-full border border-gray-700 hover:border-gray-400 transition-colors">
                 <input type="number" id="sim-int-5" value="120" class="w-8 bg-transparent text-center text-white focus:outline-none focus:text-yellow-300 font-bold"> <span class="cursor-default">分鐘</span>
               </div>
               <div class="grid grid-cols-3 gap-4 text-center w-full px-1">
                 <div class="flex flex-col items-center"><span class="text-gray-200 font-bold text-lg">7</span><span class="text-gray-500 text-[11px] mt-0.5">男</span></div>
                 <div class="flex flex-col items-center"><span class="text-rose-400 font-bold text-lg">2</span><span class="text-gray-500 text-[11px] mt-0.5">女</span></div>
-                <div class="flex flex-col items-center"><span class="text-sky-400 font-bold text-lg">0</span><span class="text-gray-500 text-[11px] mt-0.5">全</span></div>
+                <div class="flex flex-col items-center"><span class="text-sky-500 font-bold text-lg">0</span><span class="text-gray-500 text-[11px] mt-0.5">全</span></div>
               </div>
             </div>
 
@@ -910,7 +952,7 @@
               <button class="border border-gray-600 text-gray-400 hover:text-white px-2 py-1.5 rounded transition-colors"><i class="fa-solid fa-gear"></i></button>
               <div class="w-2"></div>
               <button onclick="resetSimIntervals()" class="border border-gray-600 text-yellow-500/80 hover:text-yellow-400 hover:border-yellow-600 px-4 py-1.5 rounded text-[11px] transition-colors flex items-center gap-1">
-                <i class="fa-solid fa-rotate-right text-[10px]"></i> 重置區間
+                <i class="fa-solid fa-rotate-right text-[10px]"></i> 重置位置
               </button>
             </div>
           </div>
@@ -988,18 +1030,13 @@
     // 智能監控時間計算模擬器邏輯
     // ==========================================
     function initSimulator() {
-      // 綁定所有分鐘輸入框的 input 事件，達成即時更新
       for (let i = 1; i <= 5; i++) {
         const input = document.getElementById(`sim-int-${i}`);
         if (input) {
           input.addEventListener('input', updateSimTimes);
         }
       }
-      
-      // 初始計算一次
       updateSimTimes();
-      
-      // 設定計時器，每 10 秒檢查並更新一次，讓黃色時間隨現實時間推進
       setInterval(updateSimTimes, 10000);
     }
 
@@ -1010,18 +1047,14 @@
         currentSpan.innerText = `(實機時間基準：${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')})`;
       }
 
-      // 依序抓取 5 個區間輸入值並加上當前時間
       for (let i = 1; i <= 5; i++) {
         const input = document.getElementById(`sim-int-${i}`);
         const timeDisplay = document.getElementById(`sim-time-${i}`);
         
         if (input && timeDisplay) {
-          let mins = parseInt(input.value) || 0; // 若留空或非數字視為 0
-          
-          // 計算目標時間
+          let mins = parseInt(input.value) || 0;
           let targetTime = new Date(now.getTime() + mins * 60000);
           
-          // 格式化為 HH:MM
           let hh = targetTime.getHours().toString().padStart(2, '0');
           let mm = targetTime.getMinutes().toString().padStart(2, '0');
           
@@ -1031,7 +1064,6 @@
     }
 
     function resetSimIntervals() {
-      // 還原為預設區間
       const defaults = [10, 30, 60, 90, 120];
       for (let i = 1; i <= 5; i++) {
         const input = document.getElementById(`sim-int-${i}`);
@@ -1042,7 +1074,6 @@
       updateSimTimes();
     }
     
-    // 當網頁載入完成後啟動模擬器
     document.addEventListener('DOMContentLoaded', initSimulator);
 
   </script>
